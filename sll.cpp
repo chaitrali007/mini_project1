@@ -326,46 +326,6 @@ void sll :: concat(sll *q)
     third->next=q->head;
 }
 
-// sll *sll :: merge(sll *qq)
-// {
-//     Node *p= head;
-//     Node *q=qq->head;
-//     Node *last;
-//     sll *result=new sll;
-//     if(p->data < q->data)
-//     {
-//         result->head=last=p;
-//         p=p->next;
-//         result->head->next=NULL;
-//     }
-//     else
-//     {
-//         result->head=last=q;
-//         q=q->next;
-//         result->head->next=NULL;
-//     }
-//     while(p!=NULL && q!=NULL)
-//     {
-//         if(p->data < q->data)
-//         {
-//             last->next=p;
-//             last=p;
-//             p=p->next;
-//             last->next=NULL;
-//         }
-//         else
-//         {
-//             last->next=q;
-//             last=q;
-//             q=q->next;
-//             last->next=NULL;
-//         }
-//         if(p!=NULL)last->next=p;
-//         if(q!=NULL)last->next=q;
-//     }
-//     return result;
-// }
-
 void sll :: merge(sll *qq)
 {
     Node *last;
